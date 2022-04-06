@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "tunnel.isRoom"
+title: "room.metadata"
 parent: RPC
 ---
 
-# `tunnel.IsRoom`
+# `room.metadata`
 {: .no_toc }
 
 ## Table of contents
@@ -14,8 +14,6 @@ parent: RPC
 {:toc}
 
 ---
-
-**Warning! This request is malformed and does not follow the protocol guide!**
 
 ## Support table
 
@@ -30,8 +28,8 @@ parent: RPC
 <tr>
     <td>Sends</td>
     <td>unknown</td>
-    <td>yes (3.18.1)</td>
     <td>unknown</td>
+    <td>yes (v0.2203.21-beta)</td>
 </tr>
 
 <tr>
@@ -45,7 +43,7 @@ parent: RPC
 
 ## Request example
 
-### Patchwork (3.18.1)
+### Manyverse (v0.2203.21-beta)
 
 Header:
 
@@ -56,6 +54,8 @@ Header:
 Body:
 
     {
-        "name": ["tunnel", "isRoom"],
-        "args": []
-    } 
+        "name": ["room", "metadata"],
+        "args":[]
+    }
+
+

@@ -8,13 +8,10 @@ permalink: /rpc
 
 # RPC
 
-A list of known RPC commands.
+A list of known RPC messages.
 {: .fs-6 .fw-300 }
 
-This document attempts to document known Secure Scuttlebutt RPC messages. I
-wrote down the headers for each message as well in case we find examples in
-which clients set the flags incorrectly. I also tried to put termination
-examples in this document as various clients send various bodies in them.
+This section attempts to document known Secure Scuttlebutt RPC messages. 
 
 ## `room.metadata`
 

@@ -1,62 +1,20 @@
 ---
 layout: default
-title: "RPC"
+title: RPC
 nav_order: 2
+has_children: true
+permalink: /rpc
 ---
 
 # RPC
+
+A list of known RPC commands.
+{: .fs-6 .fw-300 }
 
 This document attempts to document known Secure Scuttlebutt RPC messages. I
 wrote down the headers for each message as well in case we find examples in
 which clients set the flags incorrectly. I also tried to put termination
 examples in this document as various clients send various bodies in them.
-
-## `tunnel.isRoom`
-
-**Warning! This request is malformed and does not follow the protocol guide!**
-
-### Support table
-
-<table>
-<tr>
-    <th></th>
-    <th>go-ssb</th>
-    <th>Patchwork</th>
-    <th>Manyverse</th>
-</tr>
-
-<tr>
-    <td>Sends</td>
-    <td>unknown</td>
-    <td>yes (3.18.1)</td>
-    <td>unknown</td>
-</tr>
-
-<tr>
-    <td>Accepts</td>
-    <td>unknown</td>
-    <td>unknown</td>
-    <td>unknown</td>
-</tr>
-
-</table>
-
-### Request example
-
-#### Patchwork (3.18.1)
-
-Header:
-
-    stream=false
-    endOrError=false
-    bodyType=json
-
-Body:
-
-    {
-        "name": ["tunnel", "isRoom"],
-        "args": []
-    } 
 
 ## `room.metadata`
 

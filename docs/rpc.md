@@ -1,3 +1,9 @@
+---
+layout: default
+title: "RPC"
+nav_order: 2
+---
+
 # RPC
 
 This document attempts to document known Secure Scuttlebutt RPC messages. I

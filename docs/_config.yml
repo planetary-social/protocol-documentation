@@ -8,6 +8,8 @@ logo: "/assets/images/logo.svg"
 aux_links:
   "Planetary on Github":
     - "//github.com/planetary-social"
+  "Website":
+    - "//planetary.social"
 
 aux_links_new_tab: false
 

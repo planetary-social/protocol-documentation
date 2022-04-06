@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "room.metadata"
+title: "gossip.ping"
 parent: RPC
 ---
 
-# `room.metadata`
+# `gossip.ping`
 {: .no_toc }
 
 ## Table of contents
@@ -47,14 +47,33 @@ parent: RPC
 
 Header:
 
-    stream=false
+    stream=true
     endOrError=false
     bodyType=json
 
 Body:
 
     {
-        "name": ["room", "metadata"],
-        "args":[]
+        "name": ["gossip", "ping"],
+        "args": [
+            {
+                "timeout":300000
+            }
+        ],
+        "type": "duplex"
     }
+
+## Follow-up request example
+
+### Manyverse (v0.2203.21-beta)
+
+Header:
+
+    stream=true
+    endOrError=false
+    bodyType=json
+
+Body:
+
+    1648840049081 
 

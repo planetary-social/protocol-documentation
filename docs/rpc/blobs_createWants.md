@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "room.metadata"
+title: "blobs.createWants"
 parent: RPC
 ---
 
-# `room.metadata`
+# `blobs.createWants`
 {: .no_toc }
 
 ## Table of contents
@@ -28,7 +28,7 @@ parent: RPC
 <tr>
     <td>Sends</td>
     <td>unknown</td>
-    <td>unknown</td>
+    <td>yes (3.18.1)</td>
     <td>yes (v0.2203.21-beta)</td>
 </tr>
 
@@ -43,18 +43,35 @@ parent: RPC
 
 ## Request example
 
-### Manyverse (v0.2203.21-beta)
+### Patchwork (3.18.1)
 
 Header:
 
-    stream=false
+    stream=true
     endOrError=false
     bodyType=json
 
 Body:
 
     {
-        "name": ["room", "metadata"],
-        "args":[]
+        "name": ["blobs", "createWants"],
+        "args": [],
+        "type": "source"
+    }
+
+### Manyverse (v0.2203.21-beta)
+
+Header:
+
+    stream=true
+    endOrError=false
+    bodyType=json
+
+Body:
+
+    {
+        "name": ["blobs", "createWants"],
+        "args": [],
+        "type":"source"
     }
 

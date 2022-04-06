@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "room.metadata"
+title: "blobs.changes"
 parent: RPC
 ---
 
-# `room.metadata`
+# `blobs.changes`
 {: .no_toc }
 
 ## Table of contents
@@ -47,14 +47,15 @@ parent: RPC
 
 Header:
 
-    stream=false
+    stream=true
     endOrError=false
     bodyType=json
 
-Body:
+Body: 
 
     {
-        "name": ["room", "metadata"],
-        "args":[]
+        "name": ["blobs", "changes"],
+        "args": [],
+        "type": "source"
     }
 

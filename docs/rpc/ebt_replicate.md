@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "room.metadata"
+title: "ebt.replicate"
 parent: RPC
 ---
 
-# `room.metadata`
+# `ebt.replicate`
 {: .no_toc }
 
 ## Table of contents
@@ -47,14 +47,34 @@ parent: RPC
 
 Header:
 
-    stream=false
+    stream=true
     endOrError=false
     bodyType=json
 
 Body:
 
     {
-        "name": ["room", "metadata"],
-        "args":[]
+        "name": ["ebt", "replicate"],
+        "args": [
+            {
+                "version": 3,
+                "format": "classic"
+            }
+        ],
+        "type": "duplex"
     }
+
+## Client termination example
+
+### Manyverse (v0.2203.21-beta)
+
+Header:
+
+    stream=true
+    endOrError=true
+    bodyType=json
+
+Body:
+
+    {}
 

@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "room.metadata"
+title: "manifest"
 parent: RPC
 ---
 
-# `room.metadata`
+# `manifest`
 {: .no_toc }
 
 ## Table of contents
@@ -14,6 +14,8 @@ parent: RPC
 {:toc}
 
 ---
+
+**Warning! This request is malformed and does not follow the protocol guide!**
 
 ## Support table
 
@@ -27,9 +29,9 @@ parent: RPC
 
 <tr>
     <td>Sends</td>
-    <td>unknown</td>
-    <td>unknown</td>
-    <td>yes (v0.2203.21-beta)</td>
+    <td>yes (v0.2.1)</td>
+    <td>no (3.18.1)</td>
+    <td>no (v0.2203.21-beta)</td>
 </tr>
 
 <tr>
@@ -43,7 +45,7 @@ parent: RPC
 
 ## Request example
 
-### Manyverse (v0.2203.21-beta)
+### go-ssb (v0.2.1)
 
 Header:
 
@@ -54,7 +56,11 @@ Header:
 Body:
 
     {
-        "name": ["room", "metadata"],
-        "args":[]
+        "name": "manifest",
+        "args": [],
+        "type": "async"
     }
 
+## Response example
+
+Unknown.

@@ -11,8 +11,6 @@ permalink: /rpc
 A list of known RPC messages.
 {: .fs-6 .fw-300 }
 
-This section attempts to document known RPC messages.
-
 This documentation refers to the side sending the initial request as the
 client. The side receiving the initial request is called a server. Therefore
 for example a phrase "server termination" refers to messages sent by the server

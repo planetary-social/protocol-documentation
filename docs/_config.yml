@@ -4,5 +4,8 @@ aux_links:
   "Planetary on Github":
     - "//github.com/planetary-social"
 
-# Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
+
+heading_anchors: true
+
+search_enabled: true

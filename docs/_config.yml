@@ -1,5 +1,8 @@
 remote_theme: just-the-docs/just-the-docs
 
+title: Planetary Developer Portal
+description: Social media for humans not algorithms
+
 logo: "/assets/images/logo.svg"
 
 aux_links:

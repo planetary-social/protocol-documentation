@@ -6,7 +6,7 @@ description: "Social media for humans not algorithms"
 permalink: /
 ---
 
-# Planetary Social
+# Planetary Developer Portal
 {: .fs-9 }
 
 Social media for humans not algorithms.

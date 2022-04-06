@@ -12,7 +12,7 @@ permalink: /
 Social media for humans not algorithms.
 {: .fs-6 .fw-300 }
 
-[Our Github](https://github.com/planetary-social/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[Planetary on Github](https://github.com/planetary-social/){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
 [Website](https://planetary.social){: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---

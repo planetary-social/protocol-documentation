@@ -16,11 +16,9 @@ nav_order: 1
 
 ---
 
-## `tunnel.isRoom`
-
 **Warning! This request is malformed and does not follow the protocol guide!**
 
-### Support table
+## Support table
 
 <table>
 <tr>
@@ -46,9 +44,9 @@ nav_order: 1
 
 </table>
 
-### Request example
+## Request example
 
-#### Patchwork (3.18.1)
+### Patchwork (3.18.1)
 
 Header:
 

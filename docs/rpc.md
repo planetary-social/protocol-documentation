@@ -19,11 +19,11 @@ examples in this document as various clients send various bodies in them.
 
 <table>
 <tr>
-<th></th>
-<th>go-ssb</th>
-<th>Patchwork</th>
-<th>Manyverse</th>
-<tr>
+    <th></th>
+    <th>go-ssb</th>
+    <th>Patchwork</th>
+    <th>Manyverse</th>
+</tr>
 
 <tr>
     <td>Sends</td>
@@ -64,11 +64,11 @@ Body:
 
 <table>
 <tr>
-<th></th>
-<th>go-ssb</th>
-<th>Patchwork</th>
-<th>Manyverse</th>
-<tr>
+    <th></th>
+    <th>go-ssb</th>
+    <th>Patchwork</th>
+    <th>Manyverse</th>
+</tr>
 
 <tr>
     <td>Sends</td>
@@ -110,11 +110,11 @@ Body:
 
 <table>
 <tr>
-<th></th>
-<th>go-ssb</th>
-<th>Patchwork</th>
-<th>Manyverse</th>
-<tr>
+    <th></th>
+    <th>go-ssb</th>
+    <th>Patchwork</th>
+    <th>Manyverse</th>
+</tr>
 
 <tr>
     <td>Sends</td>
@@ -172,11 +172,11 @@ Body:
 
 <table>
 <tr>
-<th></th>
-<th>go-ssb</th>
-<th>Patchwork</th>
-<th>Manyverse</th>
-<tr>
+    <th></th>
+    <th>go-ssb</th>
+    <th>Patchwork</th>
+    <th>Manyverse</th>
+</tr>
 
 <tr>
     <td>Sends</td>
@@ -218,11 +218,11 @@ Body:
 
 <table>
 <tr>
-<th></th>
-<th>go-ssb</th>
-<th>Patchwork</th>
-<th>Manyverse</th>
-<tr>
+    <th></th>
+    <th>go-ssb</th>
+    <th>Patchwork</th>
+    <th>Manyverse</th>
+</tr>
 
 <tr>
     <td>Sends</td>
@@ -286,11 +286,11 @@ Body:
 
 <table>
 <tr>
-<th></th>
-<th>go-ssb</th>
-<th>Patchwork</th>
-<th>Manyverse</th>
-<tr>
+    <th></th>
+    <th>go-ssb</th>
+    <th>Patchwork</th>
+    <th>Manyverse</th>
+</tr>
 
 <tr>
     <td>Sends</td>
@@ -351,11 +351,11 @@ Body:
 
 <table>
 <tr>
-<th></th>
-<th>go-ssb</th>
-<th>Patchwork</th>
-<th>Manyverse</th>
-<tr>
+    <th></th>
+    <th>go-ssb</th>
+    <th>Patchwork</th>
+    <th>Manyverse</th>
+</tr>
 
 <tr>
     <td>Sends</td>
@@ -417,11 +417,11 @@ Body:
 
 <table>
 <tr>
-<th></th>
-<th>go-ssb</th>
-<th>Patchwork</th>
-<th>Manyverse</th>
-<tr>
+    <th></th>
+    <th>go-ssb</th>
+    <th>Patchwork</th>
+    <th>Manyverse</th>
+</tr>
 
 <tr>
     <td>Sends</td>

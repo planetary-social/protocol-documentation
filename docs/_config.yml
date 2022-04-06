@@ -1,6 +1,6 @@
 remote_theme: just-the-docs/just-the-docs
 
-logo: "/assets/images/logo.png"
+logo: "/assets/images/logo.svg"
 
 aux_links:
   "Planetary on Github":

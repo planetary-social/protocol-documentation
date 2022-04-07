@@ -27,14 +27,14 @@ parent: RPC
 
 <tr>
     <td>Sends</td>
-    <td>unknown</td>
+    <td>yes (v0.2.1)</td>
     <td>yes (3.18.1)</td>
     <td>unknown</td>
 </tr>
 
 <tr>
     <td>Accepts</td>
-    <td>unknown</td>
+    <td>yes (v0.2.1)</td>
     <td>yes (3.18.1)</td>
     <td>unknown</td>
 </tr>
@@ -42,6 +42,29 @@ parent: RPC
 </table>
 
 ## Request example
+
+### go-ssb (v0.2.1)
+
+Header:
+
+    stream=true
+    endOrError=false
+    bodyType=json
+
+Body:
+
+    {
+        "name": ["createHistoryStream"],
+        "args": [
+            {
+                "keys": false,
+                "limit": -1,
+                "id": "@CIlwTOK+m6v1hT2zUVOCJvvZq7KE/65ErN6yA2yrURY=.ed25519",
+                "seq": 1
+            }
+        ],
+        "type": "source"
+    }
 
 ### Patchwork (3.18.1)
 

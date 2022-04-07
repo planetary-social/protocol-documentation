@@ -27,7 +27,7 @@ parent: RPC
 
 <tr>
     <td>Sends</td>
-    <td>unknown</td>
+    <td>yes (v0.2.1)</td>
     <td>yes (3.18.1)</td>
     <td>yes (v0.2203.21-beta)</td>
 </tr>
@@ -42,6 +42,22 @@ parent: RPC
 </table>
 
 ## Request example
+
+### go-ssb (v0.2.1)
+
+Header:
+
+    stream=true
+    endOrError=false
+    bodyType=json
+
+Body:
+
+    {
+        "name ": ["blobs", "createWants"],
+        "args": [],
+        "type": "source"
+    }
 
 ### Patchwork (3.18.1)
 

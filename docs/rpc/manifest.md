@@ -15,8 +15,6 @@ parent: RPC
 
 ---
 
-**Warning! This request is malformed and does not follow the protocol guide!**
-
 ## Support table
 
 <table>
@@ -29,7 +27,7 @@ parent: RPC
 
 <tr>
     <td>Sends</td>
-    <td>yes (v0.2.1)</td>
+    <td class="bg-red-000">yes, violates protocol (v0.2.1)</td>
     <td>no (3.18.1)</td>
     <td>no (v0.2203.21-beta)</td>
 </tr>
@@ -47,6 +45,8 @@ parent: RPC
 
 ### go-ssb (v0.2.1)
 
+**Warning! This request is malformed and does not follow the protocol guide!**
+
 Header:
 
     stream=false
@@ -60,7 +60,3 @@ Body:
         "args": [],
         "type": "async"
     }
-
-## Response example
-
-Unknown.

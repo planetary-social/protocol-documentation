@@ -27,9 +27,9 @@ parent: RPC
 
 <tr>
     <td>Sends</td>
+    <td>yes (v0.2.1)</td>
     <td>unknown</td>
-    <td>unknown</td>
-    <td>yes (v0.2203.21-beta)</td>
+    <td class="bg-red-000">yes, violates protocol (v0.2203.21-beta)</td>
 </tr>
 
 <tr>
@@ -43,7 +43,25 @@ parent: RPC
 
 ## Request example
 
+## go-ssb (v0.2.1)
+
+Header:
+
+    stream=false
+    endOrError=false
+    bodyType=json
+
+Body:
+
+    {
+        "name": ["room", "metadata"],
+        "args":[],
+        "type": "async"
+    }
+
 ### Manyverse (v0.2203.21-beta)
+
+**Warning! This request is malformed and does not follow the protocol guide!**
 
 Header:
 
@@ -57,4 +75,3 @@ Body:
         "name": ["room", "metadata"],
         "args":[]
     }
-

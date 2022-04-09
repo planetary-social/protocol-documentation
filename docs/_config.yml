@@ -1,5 +1,7 @@
 remote_theme: just-the-docs/just-the-docs
 
+baseurl: "/protocol-documentation"
+
 title: Planetary Developer Portal
 description: Social media for humans not algorithms
 

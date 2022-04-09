@@ -1,0 +1,63 @@
+{% if include.variant != "left" and include.variant != "right" %}
+<div class="message error">
+    Invalid variant set: '{{ include.variant }}'.
+</div>
+{% endif %}
+
+
+<div class="rpc-message {{ include.variant }}">
+    {% if include.variant == "right" %}
+        <div class="arrow">
+            <img src="/assets/images/arrow.png">
+        </div>
+    {% endif %}
+
+    <div class="content">
+        <div class="header">
+            <ul class="fields">
+                <li>
+                    <div class="key">
+                        Request number:
+                    </div>
+                    <div class="value">
+                        {{ include.request_number }}
+                    </div>
+                </li>
+                <li>
+                    <div class="key">
+                        Stream:
+                    </div>
+                    <div class="value">
+                        {{ include.stream }}
+                    </div>
+                </li>
+                <li>
+                    <div class="key">
+                        End/err:
+                    </div>
+                    <div class="value">
+                        {{ include.end_err }}
+                    </div>
+                </li>
+                <li>
+                    <div class="key">
+                        Body type:
+                    </div>
+                    <div class="value">
+                        {{ include.body_type }}
+                    </div>
+                </li>
+            </ul>
+            <div class="client">
+                {{ include.client_name }} {{ include.client_version }}
+            </div>
+        </div>
+        <pre class="body">{{ include.body }}</pre>
+    </div>
+
+    {% if include.variant == "left" %}
+        <div class="arrow">
+            <img src="/assets/images/arrow.png">
+        </div>
+    {% endif %}
+</div>

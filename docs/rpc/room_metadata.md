@@ -171,7 +171,7 @@ specification][rooms-specification-link-to-room-metadata].
 
 #### Manyverse
 
-**Warning! This example does not conform to the Protocol Guide!**
+{% include malformed_warning.html %}
 
 {% capture body %}
 {

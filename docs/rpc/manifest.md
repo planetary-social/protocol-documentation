@@ -15,48 +15,157 @@ parent: RPC
 
 ---
 
-## Support table
+## Description
+
+This request seems to be used for listing supported RPC requests. The only
+requests that were observed do not conform to the protocol guide.
+
+## Specification
+
+### Requests
 
 <table>
+
 <tr>
-    <th></th>
-    <th>go-ssb</th>
-    <th>Patchwork</th>
-    <th>Manyverse</th>
+    <td>
+        Name
+    </td>
+    <td>
+        <pre>"manifest"</pre>
+        <p>
+            <em>
+                Warning! Name is a string and not a list of strings which is
+                incorrect according to the protocol guide.
+            </em>
+        </p>
+    </td>
 </tr>
 
 <tr>
-    <td>Sends</td>
-    <td class="bg-red-000">yes, violates protocol (v0.2.1)</td>
-    <td>no (3.18.1)</td>
-    <td>no (v0.2203.21-beta)</td>
+    <td>
+        Type
+    </td>
+    <td>
+        <pre>"async"</pre>
+    </td>
 </tr>
 
 <tr>
-    <td>Accepts</td>
-    <td>unknown</td>
-    <td>unknown</td>
-    <td>unknown</td>
+    <td>
+        Args
+    </td>
+    <td>
+        All observed examples contained an empty array.
+    </td>
 </tr>
 
 </table>
 
-## Request example
 
-### go-ssb (v0.2.1)
+### Responses
 
-**Warning! This request is malformed and does not follow the protocol guide!**
+Unknown.
 
-Header:
+## Support table
 
-    stream=false
-    endOrError=false
-    bodyType=json
+<table class="support-table">
+<tr>
+    <th></th>
+    <th>Sends</th>
+    <th>Accepts</th>
+</tr>
 
-Body:
+<tr>
+    <td>
+        go-ssb
+    </td>
+    <td class="version malformed">
+        <div class="number">
+            v0.2.1
+        </div>
+        <div class="note">
+            Yes, malformed, invalid <code>name</code>. See <a href="https://github.com/cryptoscope/go-muxrpc/issues/9">cryptoscope/go-muxrpc#9</a>.
+        </div>
+    </td>
+    <td class="version unknown">
+        <div class="number">
+            v0.2.1
+        </div>
+        <div class="note">
+            Unknown.
+        </div>
+    </td>
+</tr>
 
-    {
-        "name": "manifest",
-        "args": [],
-        "type": "async"
-    }
+<tr>
+    <td>
+        Patchwork
+    </td>
+    <td class="version no">
+        <div class="number">
+            3.18.1
+        </div>
+        <div class="note">
+            No.
+        </div>
+    </td>
+    <td class="version unknown">
+        <div class="number">
+            3.18.1
+        </div>
+        <div class="note">
+            Unknown.
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        Manyverse
+    </td>
+    <td class="version no">
+        <div class="number">
+            v0.2203.21-beta
+        </div>
+        <div class="note">
+            No.
+        </div>
+    </td>
+    <td class="version unknown">
+        <div class="number">
+            v0.2203.21-beta
+        </div>
+        <div class="note">
+            Unknown.
+        </div>
+    </td>
+</tr>
+
+</table>
+
+## Examples
+
+### Requests
+
+#### go-ssb 
+
+{% include malformed_warning.html %}
+
+{% capture body %}
+{
+    "name": "manifest",
+    "args": [],
+    "type": "async"
+}
+{% endcapture %}
+
+{% include rpc_message.html
+    variant="left"
+    request_number="1"
+    stream="false"
+    end_err="false"
+    body_type="JSON"
+    client_name="go-ssb"
+    client_version="v0.2.1"
+    body=body
+%}

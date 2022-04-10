@@ -144,7 +144,7 @@ Unknown.
 
 #### Patchwork
 
-**Warning! This example does not conform to the Protocol Guide!**
+{% include malformed_warning.html %}
 
 {% capture body %}
 {

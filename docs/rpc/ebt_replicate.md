@@ -1,10 +1,9 @@
 ---
 layout: default
-title: "ebt.replicate"
 parent: RPC
 ---
 
-# `ebt.replicate`
+# `["ebt", "replicate"]`
 {: .no_toc }
 
 ## Table of contents

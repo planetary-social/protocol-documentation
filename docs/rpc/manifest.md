@@ -1,10 +1,9 @@
 ---
 layout: default
-title: "manifest"
 parent: RPC
 ---
 
-# `manifest`
+# `"manifest"`
 {: .no_toc }
 
 ## Table of contents

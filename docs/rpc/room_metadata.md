@@ -1,10 +1,9 @@
 ---
 layout: default
-title: "room.metadata"
 parent: RPC
 ---
 
-# `room.metadata`
+# `["room", "metadata"]`
 {: .no_toc }
 
 ## Table of contents

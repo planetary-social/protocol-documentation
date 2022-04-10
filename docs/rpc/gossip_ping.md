@@ -1,10 +1,9 @@
 ---
 layout: default
-title: "gossip.ping"
 parent: RPC
 ---
 
-# `gossip.ping`
+# `["gossip", "ping"]`
 {: .no_toc }
 
 ## Table of contents

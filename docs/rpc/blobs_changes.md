@@ -1,10 +1,9 @@
 ---
 layout: default
-title: "blobs.changes"
 parent: RPC
 ---
 
-# `blobs.changes`
+# `["blobs", "changes"]`
 {: .no_toc }
 
 ## Table of contents

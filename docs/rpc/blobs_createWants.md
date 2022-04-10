@@ -1,10 +1,9 @@
 ---
 layout: default
-title: "blobs.createWants"
 parent: RPC
 ---
 
-# `blobs.createWants`
+# `["blobs", "createWants"]`
 {: .no_toc }
 
 ## Table of contents

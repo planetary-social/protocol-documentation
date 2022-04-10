@@ -1,10 +1,9 @@
 ---
 layout: default
-title: "createHistoryStream"
 parent: RPC
 ---
 
-# `createHistoryStream`
+# `["createHistoryStream"]`
 {: .no_toc }
 
 ## Table of contents

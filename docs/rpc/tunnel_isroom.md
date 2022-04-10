@@ -1,10 +1,9 @@
 ---
 layout: default
-title: "tunnel.isRoom"
 parent: RPC
 ---
 
-# `tunnel.IsRoom`
+# `["tunnel", "isRoom"]`
 {: .no_toc }
 
 ## Table of contents

@@ -15,47 +15,151 @@ parent: RPC
 
 ---
 
-**Warning! This request is malformed and does not follow the protocol guide!**
+## Description
 
-## Support table
+This request seems to be related to the rooms specification. The exact
+specification is yet to be found. The only requests that were observed do not
+conform to the protocol guide.
+
+## Specification
+
+### Requests
 
 <table>
+
 <tr>
-    <th></th>
-    <th>go-ssb</th>
-    <th>Patchwork</th>
-    <th>Manyverse</th>
+    <td>
+        Name
+    </td>
+    <td>
+        <pre>["tunnel", "isRoom"]</pre>
+    </td>
 </tr>
 
 <tr>
-    <td>Sends</td>
-    <td>unknown</td>
-    <td>yes (3.18.1)</td>
-    <td>unknown</td>
+    <td>
+        Type
+    </td>
+    <td>
+        Type is not set which is incorrect according to the protocol guide.
+    </td>
 </tr>
 
 <tr>
-    <td>Accepts</td>
-    <td>unknown</td>
-    <td>unknown</td>
-    <td>unknown</td>
+    <td>
+        Args
+    </td>
+    <td>
+        All observed examples contained an empty array.
+    </td>
 </tr>
 
 </table>
 
-## Request example
 
-### Patchwork (3.18.1)
+### Responses
 
-Header:
+Unknown.
 
-    stream=false
-    endOrError=false
-    bodyType=json
+## Support table
 
-Body:
+<table class="support-table">
+<tr>
+    <th></th>
+    <th>Sends</th>
+    <th>Accepts</th>
+</tr>
 
-    {
-        "name": ["tunnel", "isRoom"],
-        "args": []
-    } 
+<tr>
+    <td>
+        go-ssb
+    </td>
+    <td class="version no">
+        <div class="number">
+            v0.2.1
+        </div>
+        <div class="note">
+            No.
+        </div>
+    </td>
+    <td class="version unknown">
+        <div class="number">
+            v0.2.1
+        </div>
+        <div class="note">
+            Unknown.
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        Patchwork
+    </td>
+    <td class="version malformed">
+        <div class="number">
+            3.18.1
+        </div>
+        <div class="note">
+            Yes, malformed, doesn't set the <code>type</code>.
+        </div>
+    </td>
+    <td class="version unknown">
+        <div class="number">
+            3.18.1
+        </div>
+        <div class="note">
+            Unknown.
+        </div>
+    </td>
+</tr>
+
+<tr>
+    <td>
+        Manyverse
+    </td>
+    <td class="version no">
+        <div class="number">
+            v0.2203.21-beta
+        </div>
+        <div class="note">
+            No.
+        </div>
+    </td>
+    <td class="version unknown">
+        <div class="number">
+            v0.2203.21-beta
+        </div>
+        <div class="note">
+            Unknown.
+        </div>
+    </td>
+</tr>
+
+</table>
+
+## Examples
+
+### Requests
+
+#### Patchwork
+
+**Warning! This example does not conform to the Protocol Guide!**
+
+{% capture body %}
+{
+    "name": ["tunnel", "isRoom"],
+    "args": []
+} 
+{% endcapture %}
+
+{% include rpc_message.html
+    variant="left"
+    request_number="1"
+    stream="false"
+    end_err="false"
+    body_type="JSON"
+    client_name="Patchwork"
+    client_version="3.18.1"
+    body=body
+%}

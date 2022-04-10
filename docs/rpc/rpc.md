@@ -48,6 +48,17 @@ list of releases linked below.
 
 <tr>
     <td>
+        go-ssb
+    </td>
+    <td>
+        <a href="https://github.com/cryptoscope/ssb/tags">
+            https://github.com/cryptoscope/ssb/tags
+        </a>
+    </td>
+</tr>
+
+<tr>
+    <td>
         Patchwork
     </td>
     <td>
@@ -64,17 +75,6 @@ list of releases linked below.
     <td>
         <a href="https://gitlab.com/staltz/manyverse/-/tags">
             https://gitlab.com/staltz/manyverse/-/tags
-        </a>
-    </td>
-</tr>
-
-<tr>
-    <td>
-        go-ssb
-    </td>
-    <td>
-        <a href="https://github.com/cryptoscope/ssb/tags">
-            https://github.com/cryptoscope/ssb/tags
         </a>
     </td>
 </tr>

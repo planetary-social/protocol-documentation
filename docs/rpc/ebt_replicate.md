@@ -15,66 +15,173 @@ parent: RPC
 
 ---
 
-## Support table
+## Description
+
+This request is used as a new replication mechanism. This is a duplex request
+which should be initiated by the client which initiates the connection.
+
+## Specification
+
+### Requests
 
 <table>
+
 <tr>
-    <th></th>
-    <th>go-ssb</th>
-    <th>Patchwork</th>
-    <th>Manyverse</th>
+    <td>
+        Name
+    </td>
+    <td>
+        <pre>["ebt", "replicate"]</pre>
+    </td>
 </tr>
 
 <tr>
-    <td>Sends</td>
-    <td>unknown</td>
-    <td>unknown</td>
-    <td>yes (v0.2203.21-beta)</td>
+    <td>
+        Type
+    </td>
+    <td>
+        <pre>"duplex"</pre>
+    </td>
 </tr>
 
 <tr>
-    <td>Accepts</td>
-    <td>unknown</td>
-    <td>unknown</td>
-    <td>unknown</td>
+    <td>
+        Args
+    </td>
+    <td>
+        Seems to be an array with one element.
+    </td>
 </tr>
 
 </table>
 
-## Request example
 
-### Manyverse (v0.2203.21-beta)
+### Responses
 
-Header:
+Unknown.
 
-    stream=true
-    endOrError=false
-    bodyType=json
+## Support table
 
-Body:
+<table class="support-table">
+<tr>
+    <th></th>
+    <th>Sends</th>
+    <th>Accepts</th>
+</tr>
 
-    {
-        "name": ["ebt", "replicate"],
-        "args": [
-            {
-                "version": 3,
-                "format": "classic"
-            }
-        ],
-        "type": "duplex"
-    }
+<tr>
+    <td>
+        go-ssb
+    </td>
+    <td class="version unknown">
+        <div class="number">
+            v0.2.1
+        </div>
+        <div class="note">
+            Unknown.
+        </div>
+    </td>
+    <td class="version unknown">
+        <div class="number">
+            v0.2.1
+        </div>
+        <div class="note">
+            Unknown.
+        </div>
+    </td>
+</tr>
 
-## Client termination example
+<tr>
+    <td>
+        Patchwork
+    </td>
+    <td class="version unknown">
+        <div class="number">
+            3.18.1
+        </div>
+        <div class="note">
+            Unknown.
+        </div>
+    </td>
+    <td class="version unknown">
+        <div class="number">
+            3.18.1
+        </div>
+        <div class="note">
+            Unknown.
+        </div>
+    </td>
+</tr>
 
-### Manyverse (v0.2203.21-beta)
+<tr>
+    <td>
+        Manyverse
+    </td>
+    <td class="version yes">
+        <div class="number">
+            v0.2203.21-beta
+        </div>
+        <div class="note">
+            Yes.
+        </div>
+    </td>
+    <td class="version unknown">
+        <div class="number">
+            v0.2203.21-beta
+        </div>
+        <div class="note">
+            Unknown.
+        </div>
+    </td>
+</tr>
 
-Header:
+</table>
 
-    stream=true
-    endOrError=true
-    bodyType=json
+## Examples
 
-Body:
+### Requests
 
-    {}
+#### Manyverse
 
+{% capture body %}
+{
+    "name": ["ebt", "replicate"],
+    "args": [
+        {
+            "version": 3,
+            "format": "classic"
+        }
+    ],
+    "type": "duplex"
+}
+{% endcapture %}
+
+{% include rpc_message.html
+    variant="left"
+    request_number="1"
+    stream="true"
+    end_err="false"
+    body_type="JSON"
+    client_name="Manyverse"
+    client_version="v0.2203.21-beta"
+    body=body
+%}
+
+### Client terminations
+
+#### Manyverse
+
+{% capture body %}
+{}
+{% endcapture %}
+
+{% include rpc_message.html
+    variant="right"
+    request_number="1"
+    stream="true"
+    end_err="true"
+    body_type="JSON"
+    client_name="Manyverse"
+    client_version="v0.2203.21-beta"
+    body=body
+%}

@@ -17,7 +17,9 @@ parent: RPC
 
 ## Description
 
-This request is used for keeping the underlying connection alive.
+This request is most likely used to keep the underlying connection alive.
+
+The location of the primary documentation for this request is unknown.
 
 ## Specification
 

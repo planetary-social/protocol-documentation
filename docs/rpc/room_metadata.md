@@ -17,8 +17,9 @@ parent: RPC
 
 ## Description
 
-This request is related to the rooms specification. The method is mentioned [in
-the SSB Rooms 2.0 specification][rooms-specification-link-to-room-metadata].
+This request is related to the rooms specification.
+
+The primary documentation for this request is [the SSB Rooms 2.0 specification][rooms-specification-link-to-room-metadata].
 
 ## Specification
 

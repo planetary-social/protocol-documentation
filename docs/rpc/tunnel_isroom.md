@@ -17,9 +17,10 @@ parent: RPC
 
 ## Description
 
-This request seems to be related to the rooms specification. The exact
-specification is yet to be found. The only requests that were observed do not
-conform to the protocol guide.
+This request seems to be related to the rooms specification. The only requests
+that were observed do not conform to the protocol guide.
+
+The location of the primary documentation for this request is unknown.
 
 ## Specification
 

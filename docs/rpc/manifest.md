@@ -20,6 +20,8 @@ parent: RPC
 This request seems to be used for listing supported RPC requests. The only
 requests that were observed do not conform to the protocol guide.
 
+The location of the primary documentation for this request is unknown.
+
 ## Specification
 
 ### Requests

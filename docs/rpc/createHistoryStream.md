@@ -23,6 +23,8 @@ which they are interested in. This mechanism is sometimes referred to as
 "legacy replication" as new replication mechanism based on `["ebt",
 "replicate"]` is now available.
 
+The primary documentation for this request is [the Scuttlebutt Protocol Guide][protocol-guide].
+
 ## Specification
 
 ### Requests
@@ -589,3 +591,5 @@ true
     client_version="v0.2203.21-beta"
     body=body
 %}
+
+[protocol-guide]: https://ssbc.github.io/scuttlebutt-protocol-guide/

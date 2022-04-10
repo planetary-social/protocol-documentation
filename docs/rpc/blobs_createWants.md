@@ -19,6 +19,8 @@ parent: RPC
 
 This request is related to replicating blobs.
 
+The primary documentation for this request is [the Scuttlebutt Protocol Guide][protocol-guide].
+
 ## Specification
 
 ### Requests
@@ -202,3 +204,5 @@ Unknown.
     client_version="v0.2203.21-beta"
     body=body
 %}
+
+[protocol-guide]: https://ssbc.github.io/scuttlebutt-protocol-guide/

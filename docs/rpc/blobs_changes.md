@@ -19,6 +19,8 @@ parent: RPC
 
 This request is related to replicating blobs.
 
+The location of the primary documentation for this request is unknown.
+
 ## Specification
 
 ### Requests

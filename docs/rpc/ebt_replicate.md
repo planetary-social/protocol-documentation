@@ -20,6 +20,8 @@ parent: RPC
 This request is used as a new replication mechanism. This is a duplex request
 which should be initiated by the client which initiates the connection.
 
+The location of the primary documentation for this request is unknown.
+
 ## Specification
 
 ### Requests

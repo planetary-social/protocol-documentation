@@ -19,7 +19,9 @@ parent: RPC
 This request seems to be used for listing supported RPC requests. The only
 requests that were observed do not conform to the protocol guide.
 
-The location of the primary documentation for this request is unknown.
+This request is mentioned [in this pull
+request](https://github.com/ssb-js/secret-stack/pull/71) which contains some
+references to other documents.
 
 ## Specification
 

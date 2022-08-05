@@ -132,3 +132,41 @@ $arrow-padding: 1em;
         }
     }
 }
+
+.ebt-note {
+    display: inline-block;
+    font-size: 12px;
+    margin: 1em 0;
+    padding: .5em;
+    background-color: #9b59b6;
+    color: #fff;
+
+    .fields {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        flex: 1;
+
+        li {
+            padding: 0;
+            margin: 0 1em 0 0;
+            display: inline-block;
+
+            .key, .value {
+                display: inline-block;
+            }
+
+            .value {
+                font-weight: bold;
+            }
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+
+        li::before {
+            display: none;
+        }
+    }
+}

@@ -104,7 +104,8 @@ Two kinds of messages are sent by both peers during an *EBT session*:
 
 When receiving a message a peer needs to identify which message was received
 through some heuristics (eg. checking if a received message conforms to the
-specified JSON format).
+specified JSON format). There is no explicit way of determining what message
+was received.
 
 ### Control messages
 
@@ -113,11 +114,13 @@ containing one or more name/value pairs.
 
 Each name is a JSON string which represents a feed in the `@` character
 notation. The validity of this string should be confirmed when a *note* is
-received. Receiving an invalid *note* should terminate the *EBT session*.
+received. Receiving a *note* with a malformed feed identifier should terminate
+the *EBT session* with an error.
 
 Each value is a JSON number. The number presumably doesn't have the fractional
 element which comes after the decimal point as its meaning would be unknown.
-The number can be negative, positive or a zero.
+The number can be negative, positive or a zero. Receiving a *note* with a
+malformed value should terminate the *EBT session* with an error.
 
 {% capture body %}
 {
@@ -263,9 +266,6 @@ that they can be validated.
 
 ## Initializing an EBT session
 
-After the *EBT session* is created it should be initialized. The initialization
-process is started by the *requestor*.
-
 *Work in progress...*
 
 ## Fallback mechanism
@@ -317,6 +317,8 @@ will likely fail as the EBT mechanism clearly designates the *client* as the
 
 - [ECMA-404, the JSON data interchange syntax](https://www.ecma-international.org/publications-and-standards/standards/ecma-404/)
 - [Right shift (>>) operator, JavaScript documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Right_shift)
+- [Left shift (<<) operator, JavaScript documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Left_shift)
+- [Epidemic Broadcast Trees, 2007](https://www.gsd.inesc-id.pt/~ler/reports/srds07.pdf)
 
 [guide-peer-connections]: https://ssbc.github.io/scuttlebutt-protocol-guide/#peer-connections
 [guide-rpc-protocol]: https://ssbc.github.io/scuttlebutt-protocol-guide/#rpc-protocol

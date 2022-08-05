@@ -8,6 +8,6 @@ The easiest way to see your changes locally is by using [podman](https://podman.
 
 1. Run the provided script:
 
-    $ ./serve_podman.sh
+       $ ./serve_podman.sh
 
 2. Navigate to http://0.0.0.0:4000/.

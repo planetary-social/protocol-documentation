@@ -365,4 +365,12 @@ followed.
 }
 ```
 
+## See also
+
+- [About - scuttlebot.io][about-scuttlebot]
+- [About - patchfox.org][about-patchfox]
+- [Feeds - Scuttlebutt Protocol Guide][protocol-guide-following]
+
+[about-scuttlebot]: https://scuttlebot.io/docs/message-types/about.html
+[about-patchfox]: https://patchfox.org/#/message_types/about
 [protocol-guide-following]: https://ssbc.github.io/scuttlebutt-protocol-guide/#following

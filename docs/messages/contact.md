@@ -124,6 +124,9 @@ Notes:
 - Malformed messages which use strings `"true"` and `"false"` instead of
   booleans in `following` and `blocking` fields exist in the wild. They should
   be treated as invalid and disregarded.
+- Some feeds contain contact messages with a `contact` field matching the id of
+  the feed. This is most likely due to some clients following their own feed
+  during initialization. Logically this doesn't make much sense.
 
 ## Interpretation
 

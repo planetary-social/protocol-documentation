@@ -143,22 +143,20 @@ receive messages for this feed. Lets refer to this scenario as *replicate flag*
 being set to `false`.
 
 If the value isn't negative then it should be interpreted as follows. First,
-the JSON number should be parsed and converted to a signed integer represented
-in binary in big endian notation. Then, the rightmost (lowest order) bit of the
-number should be interpreted as a binary flag with `0` equal to `false` and `1`
-equal to `true`. This flag is referred to as the *receive flag*. Next, a
-"sign-extending right shift" (also called "arithmetic right shift") by 1 bit
-should be performed on the binary number therefore discarding the rightmost
-(lowest order) bit. This number should then be interpreted as a sequence number
-for the feed specified in the name field of this name/value pair. Lets simply
-call this number *sequence*.
+the JSON number should be parsed and converted to a signed integer. Then, the
+rightmost (lowest order) bit of the number should be interpreted as a binary
+flag with `0` equal to `false` and `1` equal to `true`. This flag is referred
+to as the *receive flag*. Next, a "sign-extending right shift" (also called
+"arithmetic right shift") by 1 bit should be performed on the binary number
+therefore discarding the rightmost (lowest order) bit. This number should then
+be interpreted as a sequence number for the feed specified in the name field of
+this name/value pair. Lets simply call this number *sequence*.
 
 To encode a note a reverse of this process should be performed. If the
 *replicate flag* is set to false then the value can simply be set as `-1`.
-Otherwise, the number should be stored as a signed integer encoded in big
-endian notation and "left shift" should be performed. The rightmost (lowest
-order) bit should then be set according to the *replicate flag* as described
-previously.
+Otherwise, the number should be stored as a signed integer and "left shift"
+should be performed. The rightmost (lowest order) bit should then be set
+according to the *replicate flag* as described previously.
 
 *Note: I believe when encoding this value it is irrelevant whether this is a
 signed or an unsigned integer as the value will always be positive, the type of

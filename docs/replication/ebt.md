@@ -188,7 +188,7 @@ a bit shift shouldn't matter either.*
     <td>
 {% include ebt_note.html
     replicate="true"
-    receive="false"
+    receive="true"
     sequence="0 (peer doesn't have any messages for this feed)"
 %}
     </td>
@@ -199,7 +199,7 @@ a bit shift shouldn't matter either.*
     <td>
 {% include ebt_note.html
     replicate="true"
-    receive="true"
+    receive="false"
     sequence="0 (peer doesn't have any messages for this feed)"
 %}
     </td>
@@ -210,7 +210,7 @@ a bit shift shouldn't matter either.*
     <td>
 {% include ebt_note.html
     replicate="true"
-    receive="false"
+    receive="true"
     sequence="1"
 %}
     </td>
@@ -221,7 +221,7 @@ a bit shift shouldn't matter either.*
     <td>
 {% include ebt_note.html
     replicate="true"
-    receive="true"
+    receive="false"
     sequence="1"
 %}
     </td>

@@ -145,7 +145,7 @@ being set to `false`.
 If the value isn't negative then it should be interpreted as follows. First,
 the JSON number should be parsed and converted to a signed integer. Then, the
 rightmost (lowest order) bit of the number should be interpreted as a binary
-flag with `0` equal to `false` and `1` equal to `true`. This flag is referred
+flag with `0` equal to `true` and `1` equal to `false`. This flag is referred
 to as the *receive flag*. Next, a "sign-extending right shift" (also called
 "arithmetic right shift") by 1 bit should be performed on the binary number
 therefore discarding the rightmost (lowest order) bit. This number should then
